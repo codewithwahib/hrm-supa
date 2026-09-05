@@ -1176,13 +1176,7 @@ export default function SiteVisitPage() {
                     </h1>
                   </div>
                 </div>
-                <button
-                  onClick={() => router.push(`/dashboard/${employeeId}`)}
-                  className="flex items-center gap-2 px-4 py-2 bg-[#0071BD] hover:bg-[#005a96] transition tracking-wider"
-                >
-                  <ArrowLeft className="w-4 h-4" />
-                  Back to Dashboard
-                </button>
+                
               </div>
             </div>
 
