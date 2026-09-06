@@ -3,6 +3,7 @@
 import { useState, useEffect, useMemo, useCallback } from 'react'
 import { useParams, useRouter } from 'next/navigation'
 import Footer from '@/components/footer'
+import AttendancePopup from '@/components/popup'
 import NavbarDropdown from '@/app/Navbar/page'
 import ProtectedEmployeeRoute from '@/components/ProtectedEmployeeRoute'
 import { createClient } from '@supabase/supabase-js'
@@ -675,6 +676,7 @@ function DashboardContent() {
   return (
     <>
       <NavbarDropdown/>
+      <AttendancePopup employeeId={employeeId} />
       <div className={`min-h-screen bg-gray-50 p-6 ${roboto.className}`}>
         <div className="max-w-7xl mx-auto">
           {/* Header */}
